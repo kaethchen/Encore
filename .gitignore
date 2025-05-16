@@ -1,0 +1,11 @@
+.DS_Store
+.vscode/
+App.xcworkspace/xcuserdata/
+Application/Encore/Encore.xcodeproj/xcuserdata/
+App.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.xcuserstate
+build/
+DerivedData/
+.swiftpm/
+App.xcworkspace/xcshareddata/swiftpm/
+Application/Encore/Package.resolved

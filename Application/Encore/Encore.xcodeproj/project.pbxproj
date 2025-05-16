@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		155878252DCB6E3000CA29AC /* EncoreCore in Frameworks */ = {isa = PBXBuildFile; productRef = 155878242DCB6E3000CA29AC /* EncoreCore */; };
+		1558782A2DCB71AB00CA29AC /* MainMenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155878292DCB71A600CA29AC /* MainMenuBarView.swift */; };
+		15BAD3532DD4D85E00F87173 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BAD3522DD4D85A00F87173 /* PreferencesView.swift */; };
+		15BAD3582DD4D87D00F87173 /* Setting in Frameworks */ = {isa = PBXBuildFile; productRef = 15BAD3572DD4D87D00F87173 /* Setting */; };
+		15BAD35E2DD621DA00F87173 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 15BAD35D2DD621DA00F87173 /* Settings */; };
+		15CB689D2DCC9F2100E00387 /* media-remote.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 15CB689C2DCC9F2100E00387 /* media-remote.js */; };
+		15F138E22D5CA26D000DCD4E /* EncoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F138E12D5CA26D000DCD4E /* EncoreApp.swift */; };
+		A87E7AF22CF48A6D007DE3F9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A87E7AF12CF48A6D007DE3F9 /* Localizable.xcstrings */; };
+		A8A3EA5B2DCE6F5E004CD6C6 /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A3EA5A2DCE6F5E004CD6C6 /* MediaRemote.framework */; };
+		A8B80B172CDEE30600042433 /* UIBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B80B162CDEE01700042433 /* UIBridge.swift */; };
+		A8D21C382CDC081400806857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D21C302CDC081400806857 /* Assets.xcassets */; };
+		A8D4C1622DCE6A0200181CE3 /* EncoreCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8D4C1612DCE6A0200181CE3 /* EncoreCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15CB68972DCBA14900E00387 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				15CB689D2DCC9F2100E00387 /* media-remote.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		155878292DCB71A600CA29AC /* MainMenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuBarView.swift; sourceTree = "<group>"; };
+		15BAD3522DD4D85A00F87173 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		15BAD35B2DD4E2DC00F87173 /* Encore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Encore-Info.plist"; sourceTree = "<group>"; };
+		15CB689C2DCC9F2100E00387 /* media-remote.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "media-remote.js"; path = "../../../Foundation/EncoreCore/Sources/EncoreCore/Reader/media-remote.js"; sourceTree = "<group>"; };
+		15F138E12D5CA26D000DCD4E /* EncoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoreApp.swift; sourceTree = "<group>"; };
+		A87E7AF12CF48A6D007DE3F9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A8A3EA412DCE6E42004CD6C6 /* capabilities-16.2-4BJG5RF6F9-bundle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "capabilities-16.2-4BJG5RF6F9-bundle.json"; sourceTree = "<group>"; };
+		A8A3EA442DCE6E42004CD6C6 /* Default (Dark).xccolortheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Default (Dark).xccolortheme"; sourceTree = "<group>"; };
+		A8A3EA452DCE6E42004CD6C6 /* Default (Light).xccolortheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Default (Light).xccolortheme"; sourceTree = "<group>"; };
+		A8A3EA492DCE6E42004CD6C6 /* Custom.idekeybindings */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Custom.idekeybindings; sourceTree = "<group>"; };
+		A8A3EA4A2DCE6E42004CD6C6 /* Default.idekeybindings */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Default.idekeybindings; sourceTree = "<group>"; };
+		A8A3EA4F2DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v9.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XcodeCloudCoreDataModel-v9.sqlite"; sourceTree = "<group>"; };
+		A8A3EA502DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v9.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XcodeCloudCoreDataModel-v9.sqlite-shm"; sourceTree = "<group>"; };
+		A8A3EA512DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v9.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = text; path = "XcodeCloudCoreDataModel-v9.sqlite-wal"; sourceTree = "<group>"; };
+		A8A3EA522DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v10.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XcodeCloudCoreDataModel-v10.sqlite"; sourceTree = "<group>"; };
+		A8A3EA532DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v10.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "XcodeCloudCoreDataModel-v10.sqlite-shm"; sourceTree = "<group>"; };
+		A8A3EA542DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v10.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = text; path = "XcodeCloudCoreDataModel-v10.sqlite-wal"; sourceTree = "<group>"; };
+		A8A3EA562DCE6E42004CD6C6 /* IDEDocumentationWindow.xcuserstate */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = IDEDocumentationWindow.xcuserstate; sourceTree = "<group>"; };
+		A8A3EA572DCE6E42004CD6C6 /* IDEEditorInteractivityHistory */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = IDEEditorInteractivityHistory; sourceTree = "<group>"; };
+		A8A3EA582DCE6E42004CD6C6 /* IDEPreferencesController.xcuserstate */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = IDEPreferencesController.xcuserstate; sourceTree = "<group>"; };
+		A8A3EA5A2DCE6F5E004CD6C6 /* MediaRemote.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaRemote.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks/MediaRemote.framework; sourceTree = DEVELOPER_DIR; };
+		A8B80B162CDEE01700042433 /* UIBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBridge.swift; sourceTree = "<group>"; };
+		A8D21C1E2CDC07C600806857 /* Encore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D21C302CDC081400806857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8D21C322CDC081400806857 /* Encore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Encore.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8D21C1B2CDC07C600806857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				155878252DCB6E3000CA29AC /* EncoreCore in Frameworks */,
+				15BAD35E2DD621DA00F87173 /* Settings in Frameworks */,
+				15BAD3582DD4D87D00F87173 /* Setting in Frameworks */,
+				A8D4C1622DCE6A0200181CE3 /* EncoreCore in Frameworks */,
+				A8A3EA5B2DCE6F5E004CD6C6 /* MediaRemote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150D7B5C2CE39EF700B4D432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA5A2DCE6F5E004CD6C6 /* MediaRemote.framework */,
+				A8A3EA592DCE6E42004CD6C6 /* UserData */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		155878262DCB717E00CA29AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15BAD3512DD4D85500F87173 /* Preferences */,
+				155878282DCB719E00CA29AC /* Menu Bar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		155878282DCB719E00CA29AC /* Menu Bar */ = {
+			isa = PBXGroup;
+			children = (
+				155878292DCB71A600CA29AC /* MainMenuBarView.swift */,
+			);
+			path = "Menu Bar";
+			sourceTree = "<group>";
+		};
+		1579B4832CE653F1008C2572 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8B80B162CDEE01700042433 /* UIBridge.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		15BAD3512DD4D85500F87173 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				15BAD3522DD4D85A00F87173 /* PreferencesView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		A89150C72CDED16800F10FA3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A8D21C322CDC081400806857 /* Encore.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A89150C82CDED17200F10FA3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A8D21C302CDC081400806857 /* Assets.xcassets */,
+				A87E7AF12CF48A6D007DE3F9 /* Localizable.xcstrings */,
+				155878262DCB717E00CA29AC /* Views */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A89150C92CDED19000F10FA3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				15F138E12D5CA26D000DCD4E /* EncoreApp.swift */,
+				15CB689C2DCC9F2100E00387 /* media-remote.js */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A8A3EA422DCE6E42004CD6C6 /* Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA412DCE6E42004CD6C6 /* capabilities-16.2-4BJG5RF6F9-bundle.json */,
+			);
+			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		A8A3EA432DCE6E42004CD6C6 /* CodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeSnippets;
+			sourceTree = "<group>";
+		};
+		A8A3EA462DCE6E42004CD6C6 /* FontAndColorThemes */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA442DCE6E42004CD6C6 /* Default (Dark).xccolortheme */,
+				A8A3EA452DCE6E42004CD6C6 /* Default (Light).xccolortheme */,
+			);
+			path = FontAndColorThemes;
+			sourceTree = "<group>";
+		};
+		A8A3EA472DCE6E42004CD6C6 /* Simulator Devices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Simulator Devices";
+			sourceTree = "<group>";
+		};
+		A8A3EA482DCE6E42004CD6C6 /* IB Support */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA472DCE6E42004CD6C6 /* Simulator Devices */,
+			);
+			path = "IB Support";
+			sourceTree = "<group>";
+		};
+		A8A3EA4B2DCE6E42004CD6C6 /* KeyBindings */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA492DCE6E42004CD6C6 /* Custom.idekeybindings */,
+				A8A3EA4A2DCE6E42004CD6C6 /* Default.idekeybindings */,
+			);
+			path = KeyBindings;
+			sourceTree = "<group>";
+		};
+		A8A3EA4C2DCE6E42004CD6C6 /* Simulator Devices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Simulator Devices";
+			sourceTree = "<group>";
+		};
+		A8A3EA4D2DCE6E42004CD6C6 /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA4C2DCE6E42004CD6C6 /* Simulator Devices */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
+		A8A3EA4E2DCE6E42004CD6C6 /* Provisioning Profiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Provisioning Profiles";
+			sourceTree = "<group>";
+		};
+		A8A3EA552DCE6E42004CD6C6 /* XcodeCloud */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA4F2DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v9.sqlite */,
+				A8A3EA502DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v9.sqlite-shm */,
+				A8A3EA512DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v9.sqlite-wal */,
+				A8A3EA522DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v10.sqlite */,
+				A8A3EA532DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v10.sqlite-shm */,
+				A8A3EA542DCE6E42004CD6C6 /* XcodeCloudCoreDataModel-v10.sqlite-wal */,
+			);
+			path = XcodeCloud;
+			sourceTree = "<group>";
+		};
+		A8A3EA592DCE6E42004CD6C6 /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3EA422DCE6E42004CD6C6 /* Capabilities */,
+				A8A3EA432DCE6E42004CD6C6 /* CodeSnippets */,
+				A8A3EA462DCE6E42004CD6C6 /* FontAndColorThemes */,
+				A8A3EA482DCE6E42004CD6C6 /* IB Support */,
+				A8A3EA4B2DCE6E42004CD6C6 /* KeyBindings */,
+				A8A3EA4D2DCE6E42004CD6C6 /* Previews */,
+				A8A3EA4E2DCE6E42004CD6C6 /* Provisioning Profiles */,
+				A8A3EA552DCE6E42004CD6C6 /* XcodeCloud */,
+				A8A3EA562DCE6E42004CD6C6 /* IDEDocumentationWindow.xcuserstate */,
+				A8A3EA572DCE6E42004CD6C6 /* IDEEditorInteractivityHistory */,
+				A8A3EA582DCE6E42004CD6C6 /* IDEPreferencesController.xcuserstate */,
+			);
+			name = UserData;
+			path = ../../../../Library/Developer/Xcode/UserData;
+			sourceTree = "<group>";
+		};
+		A8D21C152CDC07C600806857 = {
+			isa = PBXGroup;
+			children = (
+				15BAD35B2DD4E2DC00F87173 /* Encore-Info.plist */,
+				A89150C92CDED19000F10FA3 /* Application */,
+				1579B4832CE653F1008C2572 /* Extension */,
+				150D7B5C2CE39EF700B4D432 /* Frameworks */,
+				A89150C82CDED17200F10FA3 /* Interface */,
+				A89150C72CDED16800F10FA3 /* macOS */,
+				A8D21C1F2CDC07C600806857 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8D21C1F2CDC07C600806857 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D21C1E2CDC07C600806857 /* Encore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8D21C1D2CDC07C600806857 /* Encore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D21C2D2CDC07C700806857 /* Build configuration list for PBXNativeTarget "Encore" */;
+			buildPhases = (
+				A8D21C1A2CDC07C600806857 /* Sources */,
+				A8D21C1B2CDC07C600806857 /* Frameworks */,
+				A8D21C1C2CDC07C600806857 /* Resources */,
+				15CB68972DCBA14900E00387 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Encore;
+			packageProductDependencies = (
+				155878242DCB6E3000CA29AC /* EncoreCore */,
+				A8D4C1612DCE6A0200181CE3 /* EncoreCore */,
+				15BAD3572DD4D87D00F87173 /* Setting */,
+				15BAD35D2DD621DA00F87173 /* Settings */,
+			);
+			productName = Encore;
+			productReference = A8D21C1E2CDC07C600806857 /* Encore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8D21C162CDC07C600806857 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					A8D21C1D2CDC07C600806857 = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+				};
+			};
+			buildConfigurationList = A8D21C192CDC07C600806857 /* Build configuration list for PBXProject "Encore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				de,
+				lb,
+			);
+			mainGroup = A8D21C152CDC07C600806857;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A8D4C1602DCE6A0200181CE3 /* XCLocalSwiftPackageReference "../../Foundation/EncoreCore" */,
+				15BAD3562DD4D87D00F87173 /* XCRemoteSwiftPackageReference "Setting" */,
+				15BAD35C2DD621DA00F87173 /* XCRemoteSwiftPackageReference "Settings" */,
+			);
+			productRefGroup = A8D21C1F2CDC07C600806857 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8D21C1D2CDC07C600806857 /* Encore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8D21C1C2CDC07C600806857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87E7AF22CF48A6D007DE3F9 /* Localizable.xcstrings in Resources */,
+				A8D21C382CDC081400806857 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D21C1A2CDC07C600806857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BAD3532DD4D85E00F87173 /* PreferencesView.swift in Sources */,
+				1558782A2DCB71AB00CA29AC /* MainMenuBarView.swift in Sources */,
+				15F138E22D5CA26D000DCD4E /* EncoreApp.swift in Sources */,
+				A8B80B172CDEE30600042433 /* UIBridge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A8D21C2B2CDC07C700806857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8D21C2C2CDC07C700806857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		A8D21C2E2CDC07C700806857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/Encore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Encore-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© Copyright 2025 Alexandra Göttlicher";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lu.alexandra.Encore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A8D21C2F2CDC07C700806857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/Encore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Encore-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© Copyright 2025 Alexandra Göttlicher";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lu.alexandra.Encore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8D21C192CDC07C600806857 /* Build configuration list for PBXProject "Encore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D21C2B2CDC07C700806857 /* Debug */,
+				A8D21C2C2CDC07C700806857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D21C2D2CDC07C700806857 /* Build configuration list for PBXNativeTarget "Encore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D21C2E2CDC07C700806857 /* Debug */,
+				A8D21C2F2CDC07C700806857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A8D4C1602DCE6A0200181CE3 /* XCLocalSwiftPackageReference "../../Foundation/EncoreCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Foundation/EncoreCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15BAD3562DD4D87D00F87173 /* XCRemoteSwiftPackageReference "Setting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Setting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		15BAD35C2DD621DA00F87173 /* XCRemoteSwiftPackageReference "Settings" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Settings.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		155878242DCB6E3000CA29AC /* EncoreCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EncoreCore;
+		};
+		15BAD3572DD4D87D00F87173 /* Setting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15BAD3562DD4D87D00F87173 /* XCRemoteSwiftPackageReference "Setting" */;
+			productName = Setting;
+		};
+		15BAD35D2DD621DA00F87173 /* Settings */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15BAD35C2DD621DA00F87173 /* XCRemoteSwiftPackageReference "Settings" */;
+			productName = Settings;
+		};
+		A8D4C1612DCE6A0200181CE3 /* EncoreCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EncoreCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A8D21C162CDC07C600806857 /* Project object */;
+}
